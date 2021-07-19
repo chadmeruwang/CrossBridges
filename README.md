@@ -30,7 +30,7 @@ export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 ```
 ./cross_bridge_simulator input.yaml
 ```
-2. Input file format. take input.yaml as an example 
+2. Input file format. Take input.yaml as an example 
 ```
 # the first line is a list of initial team members' speed ft/minute
 - [100, 50, 20, 10]
@@ -54,3 +54,13 @@ export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 ```
 ./simulator_test
 ```
+which does the function testing on input format/layout and output validation.
+
+5. To stress test the simulator, simply go to "test" directory run the shell script yaml_generator.sh
+```
+./yaml_generator.sh big.yaml 1000
+```
+which generates a yaml file big.yaml with 1000 bridges. You can then run ./cross_bridge_simulator test/big.yaml to check the results
+
+
+
