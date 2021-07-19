@@ -22,16 +22,20 @@ A simulator simulating cross bridge problems with multiple bridges and team with
 # the first line is a list of initial team members' speed ft/minute
 - [100, 50, 20, 10]
 # starting from the second line each list element is a list consisting
-# bridge lengths (ft) and the speed of new members added at this bridge
+# bridge lengths (ft) and the speed of new members joined at this bridge
 -
+# first bridge' length is 100 ft
   - 100
+# no new member added
   - []
 -
   - 250
+# a new member with speed 2.5 ft/minute joined
   - [2.5]
 -
   - 150
   - [25, 15]
+
 ```
 4. To run the test, just type 
 ```
