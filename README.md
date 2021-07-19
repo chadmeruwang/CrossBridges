@@ -62,7 +62,7 @@ which does the function testing on input format/layout and output validation.
 ```
 which generates a yaml file big.yaml with 1000 bridges. You can then run ./cross_bridge_simulator test/big.yaml to check the results
 
-## Ideas to scale ##  
+## Ideas to Scale ##  
 Currently the simulator is implemented as a multi-threaded application running on a single host. Each thread computes the minimal time to cross one bridge in parallel with other threads. You can scale the application up using more cores and larger memory. 
 
 To scale it out on multiple hosts, you may extend the application easily using map-reduce architecture where an input yaml (potentially too large to fit into one machine's memory) is divided into N files each of which is fed to a simulator running on one host. Then the machines compute local total crossing time in parallel. The local results are then aggregated (reduced) to global total crossing time.    
