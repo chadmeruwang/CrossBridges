@@ -20,7 +20,7 @@ export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
    ```
    make
    ```
-4. two executables will be built 
+4. Two executables will be built 
    ```
    cross_bridge_simulator : the simulator to solve cross bridges problems
    simulator_test : the test program to validate the correctness of the code
