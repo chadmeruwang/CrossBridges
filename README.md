@@ -3,17 +3,13 @@ A simulator simulating cross bridge problems with multiple bridges and team with
 ## How to Build ##
 1. Install cmake, make, g++.
 2. Install [yaml-cpp](https://github.com/jbeder/yaml-cpp).
-3. In current directory type
+3. In current directory, type
    ```
    make
    ```
-5. two executables will be built 
+4. two executables will be built 
    ```
    cross_bridge_simulator : the simulator to solve cross bridges problems
    simulator_test : the test program to validate the correctness of the code
-   ```
-6. To uninstall the simulator, run
-   ```
-   make clean
    ```
 ## run ##
