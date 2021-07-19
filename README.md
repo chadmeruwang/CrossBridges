@@ -1,5 +1,5 @@
 # CrossBridges #
-A simulator simulating cross bridge problems with multiple bridges and team with new members added at each bridge. The simulator reads a yaml file with bridge and team information and returns the minimal to cross each bridge and the total time to cross all bridges.
+A simulator solves cross bridge problem with multiple bridges and a team with new members join at each bridge. The simulator reads a yaml file with bridge and team information and returns the minimal time to cross each bridge and the total time to cross all bridges.
 ## How to Build (tested on Ubuntu 20.04.2 LTS)##
 1. Install cmake, make, g++.
 2. Install [yaml-cpp](https://github.com/jbeder/yaml-cpp) as dynamic library with following steps
@@ -23,7 +23,7 @@ export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 4. Two executables will be built 
    ```
    cross_bridge_simulator : the simulator to solve cross bridges problems
-   simulator_test : the test program to validate the correctness of the code
+   simulator_test : the test program to validate correctness of the code
    ```
 ## How to Run/Test Simulator ##
 1. ./cross_bridge_simulator path_to_input_yaml_file. For example
