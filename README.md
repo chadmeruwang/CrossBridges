@@ -12,7 +12,7 @@ A simulator simulating cross bridge problems with multiple bridges and team with
    cross_bridge_simulator : the simulator to solve cross bridges problems
    simulator_test : the test program to validate the correctness of the code
    ```
-## How to Run Simulator##
+## How to Run Simulator ##
 1. ./cross_bridge_simulator path_to_input_yaml_file. For example
 ```
 ./cross_bridge_simulator input.yaml
