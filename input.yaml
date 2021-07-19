@@ -1,5 +1,7 @@
--
-  [100, 50, 20, 10]
+# the first line is a list of initial team members' speed ft/minute
+- [100, 50, 20, 10]
+# starting from the second line each list element is a list consisting
+# bridge lengths (ft) and the speed of new members added at this bridge 
 -
   - 100
   - []
