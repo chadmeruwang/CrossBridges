@@ -2,8 +2,21 @@
 A simulator simulating cross bridge problems with multiple bridges and team with new members added at each bridge. The simulator reads a yaml file with bridge and team information and returns the minimal to cross each bridge and the total time to cross all bridges.
 ## How to Build ##
 1. Install cmake, make, g++.
-2. Install [yaml-cpp](https://github.com/jbeder/yaml-cpp).
-3. In current directory, type
+2. Install [yaml-cpp](https://github.com/jbeder/yaml-cpp) as dynamic library with following steps
+- git clone https://github.com/jbeder/yaml-cpp.git
+- In "yaml-cpp" directory, type
+```
+mkdir build
+cd  build
+```
+- In build directory, type (assuming you have sudo access)
+```
+cmake -DYAML_BUILD_SHARED_LIBS=ON ..
+make
+make install
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+```
+3. Now yaml-cpp has been installed as a dynamic library. Go to "CrossBridges" directory, type
    ```
    make
    ```
