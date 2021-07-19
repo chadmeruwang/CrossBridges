@@ -12,4 +12,28 @@ A simulator simulating cross bridge problems with multiple bridges and team with
    cross_bridge_simulator : the simulator to solve cross bridges problems
    simulator_test : the test program to validate the correctness of the code
    ```
-## run ##
+## How to Run Simulator##
+1. ./cross_bridge_simulator path_to_input_yaml_file. For example
+```
+./cross_bridge_simulator input.yaml
+```
+2. Input file format. take input.yaml as an example 
+```
+# the first line is a list of initial team members' speed ft/minute
+- [100, 50, 20, 10]
+# starting from the second line each list element is a list consisting
+# bridge lengths (ft) and the speed of new members added at this bridge
+-
+  - 100
+  - []
+-
+  - 250
+  - [2.5]
+-
+  - 150
+  - [25, 15]
+```
+4. To run the test, just type 
+```
+./simulator_test
+```
