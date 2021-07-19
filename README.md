@@ -12,7 +12,7 @@ A simulator simulating cross bridge problems with multiple bridges and team with
    cross_bridge_simulator : the simulator to solve cross bridges problems
    simulator_test : the test program to validate the correctness of the code
    ```
-5. To uninstall the simulator, run
+6. To uninstall the simulator, run
    ```
    make clean
    ```
