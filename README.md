@@ -17,14 +17,14 @@ make install
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 ```
 3. Now yaml-cpp has been installed as a dynamic library. Go to "CrossBridges" directory, type
-   ```
-   make
-   ```
+```
+make
+```
 4. Two executables will be built 
-   ```
-   cross_bridge_simulator : the simulator to solve cross bridges problems
-   simulator_test : the test program to validate correctness of the code
-   ```
+```
+cross_bridge_simulator : the simulator to solve cross bridges problems
+simulator_test : the test program to validate correctness of the code
+```
 ## How to Run/Test Simulator ##
 1. ./cross_bridge_simulator path_to_input_yaml_file. For example
 ```
